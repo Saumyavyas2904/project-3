@@ -19,7 +19,6 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # Set up logging
 logging.basicConfig(
-    filename='/var/log/flask_app.log' if os.getenv('ENV') == 'production' else None,
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
